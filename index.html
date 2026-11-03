@@ -78,13 +78,17 @@ function registrarDemo() {
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
   import { getAuth } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js";
-
-  const firebaseConfig = {
-    projectId: "novacapital-84a64",
-    authDomain: "novacapital-84a64.firebaseapp.com"
-  };
-
-  const app = initializeApp(firebaseConfig);
+const firebaseconfig = {
+  apiKey: "AIzaSyDDm8DoCOnR1_8aIFJpHMMIt4aUhFjdMS4",
+  authDomain: "novacapital-84a64.firebaseapp.com",
+  projectId: "novacapital-84a64",
+  storageBucket: "novacapital-84a64.firebasestorage.app",
+  messagingSenderId: "21003093870",
+  appId: "1:21003093870:web:6f2e4c0f9fe2fad594237f",
+  measurementId: "G-W10KE8J5G7"
+};  
+  
+  const app = initializeApp(firebaseconfig);
   const auth = getAuth(app);
   console.log("Firebase konekte");
 </script>
