@@ -40,5 +40,40 @@ function simular() {
     " | Total virtual: RD$ " + (monto + beneficio).toFixed(2);
 }
 </script>
+<div class="card" id="registro-demo">
+  <h2>Crear cuenta NovaCapital</h2>
+  <p>Registro de demostración. No introduzcas datos reales.</p>
+
+  <input id="nombreDemo" type="text"
+    placeholder="Nombre de ejemplo"
+    style="padding:12px;max-width:90%;margin:8px">
+
+  <input id="correoDemo" type="text"
+    placeholder="Correo ficticio"
+    style="padding:12px;max-width:90%;margin:8px">
+
+  <p>
+    <button onclick="registrarDemo()">
+      Registrarse (DEMO)
+    </button>
+  </p>
+  <p id="mensajeRegistro"></p>
+</div>
+
+<script>
+function registrarDemo() {
+  const nombre = document.getElementById("nombreDemo").value.trim();
+  const correo = document.getElementById("correoDemo").value.trim();
+  const mensaje = document.getElementById("mensajeRegistro");
+
+  if (!nombre || !correo) {
+    mensaje.textContent = "Completa los dos campos de ejemplo.";
+    return;
+  }
+
+  mensaje.textContent =
+    "Registro de prueba completado. No se ha creado una cuenta real.";
+}
+</script>
 </body>
 </html> 
