@@ -11,5 +11,28 @@
 <p>Invierte con visión. Crece con confianza.</p>
 <div class="card"><h2>Bienvenido</h2><p>Plataforma de demostración</p><p>Saldo virtual: RD$ 0</p><button onclick="alert('Próximamente: simulador de inversión')">Explorar simulador</button></div>
 <p>DEMO — Sin depósitos ni dinero real.</p>
+<div class="card">
+  <h2>Simulador de inversión</h2>
+  <p>Introduce un monto virtual en RD$:</p>
+  <input id="monto" type="number" min="1" placeholder="Ejemplo: 1000">
+  <button onclick="simular()">Calcular</button>
+  <p id="resultado"></p>
+  <p>Ejemplo educativo: 5% hipotético, no garantizado.</p>
+</div>
+
+<script>
+function simular() {
+  const monto = Number(document.getElementById("monto").value);
+  const resultado = document.getElementById("resultado");
+  if (!Number.isFinite(monto) || monto <= 0) {
+    resultado.textContent = "Introduce un monto válido.";
+    return;
+  }
+  const beneficio = monto * 0.05;
+  resultado.textContent =
+    "Beneficio hipotético: RD$ " + beneficio.toFixed(2) +
+    " | Total virtual: RD$ " + (monto + beneficio).toFixed(2);
+}
+</script>
 </body>
-</html>
+</html> 
