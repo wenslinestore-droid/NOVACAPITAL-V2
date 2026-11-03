@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaCapital Demo</title>
+<style>body{font-family:Arial;background:#112D49;color:white;text-align:center;padding:35px}h1{color:#D4A64C}.card{background:#203e59;border-radius:18px;padding:24px;margin-top:25px}button{background:#D4A64C;border:0;padding:14px;border-radius:10px;font-weight:bold}</style>
+</head>
+<body>
+<h1>NovaCapital</h1>
+<p>Invierte con visión. Crece con confianza.</p>
+<div class="card"><h2>Bienvenido</h2><p>Plataforma de demostración</p><p>Saldo virtual: RD$ 0</p><button onclick="alert('Próximamente: simulador de inversión')">Explorar simulador</button></div>
+<p>DEMO — Sin depósitos ni dinero real.</p>
+</body>
+</html>
